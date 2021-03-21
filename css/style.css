@@ -387,9 +387,69 @@ i {
     }
 
     .footer {
-        height: 30rem;
+        
         grid-column: 1/ -1;
         grid-row: 7/8;
+    }
+}
+
+@media screen and (max-width: 39.9375em) {
+
+    .title{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content:center;
+        padding:2rem;
+    }
+
+    .title p {
+        font-size: 1rem;
+        text-align:center;
+        
+    }
+
+
+    .subtitle .text {
+        font-size: 1rem;
+    }
+
+    .subtitle .text2 {
+        font-size: 1rem;
+    }
+
+    i {
+        font-size: 1.4rem;
+    }
+
+    .fas.fa-mug-hot {
+        font-size: 1.4rem;
+    }
+
+    .heart {
+        width: 1rem;
+        height: 1rem;
+    }
+
+   
+    .heart::before {
+        content: '';
+        position: absolute;
+        top: -.9rem;
+        width: 1rem;
+        height: 1rem;
+  
+    }
+
+
+    .heart::after {
+        content: '';
+        position: absolute;
+        top: 0rem;
+        left: -.8rem;
+        width: 1rem;
+        height: 1rem;
+   
     }
 }
 
